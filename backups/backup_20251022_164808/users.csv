@@ -1,0 +1,9 @@
+username,password,role,email,department,status
+admin,admin123,Admin,admin@slms.com,IT,Active
+madhura,madhura12,User,madhura.khedkar@college.com,Computer Engineering,Active
+arjun,arjun456,User,arjun.mehta@college.com,IT,Active
+sneha,sneha789,User,sneha.patil@college.com,Electronics,Active
+rohit,rohit2024,User,rohit.sharma@college.com,Mechanical,Active
+kavya,kavya321,User,kavya.nair@college.com,Computer Engineering,Active
+harsh,harsh987,User,harsh.verma@college.com,IT,Active
+meera,meera654,User,meera.joshi@college.com,Electronics,Inactive

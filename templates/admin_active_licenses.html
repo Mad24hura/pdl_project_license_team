@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Active Licenses - SLMS{% endblock %}
+{% block page_title %}Active Licenses{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2 class="page-title">Active Licenses</h2>
+    <p class="page-subtitle">View and search active licenses</p>
+</div>
+
+<div class="form-container" style="margin-bottom: 2rem;">
+    <form method="GET" action="{{ url_for('admin_active_licenses') }}" class="search-form">
+        <div class="form-group">
+            <label for="license_id" class="form-label">Search by License ID</label>
+            <input type="text" id="license_id" name="license_id" class="form-input" placeholder="e.g., L001" value="{{ search_id if search_id else '' }}">
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+                <span class="btn-icon">🔍</span>
+                Search
+            </button>
+            <a href="{{ url_for('admin_active_licenses') }}" class="btn btn-secondary">
+                <span class="btn-icon">🔄</span>
+                Clear
+            </a>
+        </div>
+    </form>
+</div>
+
+{% if search_id and not licenses %}
+<div class="alert alert-warning">
+    License ID "{{ search_id }}" not found in active licenses.
+</div>
+{% elif licenses %}
+<div class="results-container">
+    <div class="results-header">
+        <h3 class="results-title">Active Licenses</h3>
+        <span class="results-count">{{ licenses|length }} license(s) found</span>
+    </div>
+    
+    <div class="table-container">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>License ID</th>
+                    <th>License Name</th>
+                    <th>Category</th>
+                    <th>Department</th>
+                    <th>Assigned Device</th>
+                    <th>Expiry Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for license in licenses %}
+                <tr>
+                    <td><strong>{{ license.id }}</strong></td>
+                    <td>{{ license.software_name }}</td>
+                    <td>{{ license.category }}</td>
+                    <td>{{ license.assigned_department }}</td>
+                    <td>{{ license.assigned_device }}</td>
+                    <td>{{ license.expiry_date }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% else %}
+<div class="empty-state">
+    <div class="empty-icon">✅</div>
+    <h3>No active licenses found</h3>
+    <p>There are currently no active licenses in the system.</p>
+</div>
+{% endif %}
+{% endblock %}
+

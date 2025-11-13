@@ -1,0 +1,11 @@
+id,software_name,category,license_key,assigned_department,assigned_device,start_date,expiry_date,status
+L001,Microsoft Office 365,Productivity,OFFICE-9821-ABCD,Computer Engineering,LAB-PC-001,2024-01-10,2026-01-10,Active
+L002,Adobe Photoshop,Design,ADBE-1122-PSCC,IT,LAB-PC-017,2023-08-05,2025-11-01,Active
+L003,AutoCAD,Engineering,AUTO-5588-CADX,Mechanical,LAB-PC-021,2023-07-20,2025-10-25,Expiring Soon
+L004,Visual Studio,Development,VSC-3344-DEV,Computer Engineering,LAB-PC-004,2023-01-15,2024-07-30,Expired
+L005,Anaconda,Data Science,ANA-4455-DSCI,IT,LAB-PC-011,2024-03-01,2026-03-01,Active
+L006,Matlab,Computation,MLB-7788-MATH,Electronics,LAB-PC-007,2023-10-01,2025-10-20,Expiring Soon
+L007,Windows 11 Pro,OS,WIN-5555-PRO,All,LAB-PC-010,2023-09-25,2026-09-25,Active
+L008,CorelDRAW,Design,COREL-8989-DRW,Mechanical,LAB-PC-023,2022-05-10,2024-05-10,Expired
+L009,PyCharm IDE,Development,PYCH-7789-IDE,Computer Engineering,LAB-PC-009,2023-10-15,2025-12-01,Active
+L010,SolidWorks,3D Modeling,SWKS-4433-3D,Mechanical,LAB-PC-022,2023-11-01,2025-11-10,Active

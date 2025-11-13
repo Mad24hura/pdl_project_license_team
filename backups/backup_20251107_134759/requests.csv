@@ -1,0 +1,8 @@
+request_id,username,software_name,reason,date,status,device
+R001,madhura,Adobe Photoshop,Required for design assignments,2025-09-15,Approved,LAB-PC-017
+R002,arjun,AutoCAD,Project work for mechanical drawing,2025-09-28,Approved,LAB-PC-021
+R003,sneha,Matlab,Signal processing simulation,2025-09-05,Approved,LAB-PC-007
+R004,rohit,SolidWorks,Mechanical model rendering for final year project,2025-10-02,Rejected,LAB-PC-022
+R005,harsh,Visual Studio,Need IDE for web development practice,2025-08-30,Rejected,LAB-PC-004
+R006,meera,Anaconda,Data science coursework,2025-10-01,Approved,LAB-PC-011
+R007,user,Anaconda,to practice,2025-11-03,Pending,LAB-PC-010
