@@ -197,3 +197,10 @@ For questions or issues, please refer to the Help & Support section within the a
 ---
 
 **Note**: This application is designed for demonstration purposes and uses CSV files for data storage. For production use, consider implementing a proper database system and additional security measures.
+
+## Team Members
+- Member 1: [Your Name]
+- Member 2: [Teammate Name]
+
+## Collaboration Summary
+This project was part of an open-source simulation activity.
